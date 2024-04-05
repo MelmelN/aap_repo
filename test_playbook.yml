@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+
+  tasks:
+    - name: Task1
+      debug: 
+        msg: "I am just testing how aap works"      
