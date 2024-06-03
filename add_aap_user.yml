@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  become: yes
+
+
+  tasks:
+    - name: Creat User
+      awx.awx.user:
+         username: melo1
+         password: melvis
+         email: melvisnkenglefac57@gmail.com
+         controller_host: https://192.168.60.168
+         controller_username: admin
+         controller_password: melvis
+         validate_certs: false
